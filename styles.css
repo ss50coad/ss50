@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#gameArea {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    border: 1.9px solid #e90000;
+    overflow: hidden;
+    background-image: url('LOGO.gif'); /* Change this to your image path */
+    background-size: cover; /* This will make the image cover the entire area */
+    background-position: center; /* This will center the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+}
+
+#player {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(51, 153, 255); /* Softer blue */
+    border: 2px solid #ffffff; /* Black border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(255, 2, 2, 0.5); /* Shadow effect */
+}
+
+#food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+#controls {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#controls div {
+    display: flex;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
